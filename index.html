@@ -1,7 +1,38 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TicTacToe</title>
+    <link href="./src/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="https://www.iconninja.com/files/559/882/406/tic-tac-toe-icon.png" type="image/gif" sizes="16x16">
+  </head>
 </html>
+
+<body>
+  <!------------------------------------------------->
+  <div id="gridContainer">
+    <p id="blank1"></p>
+    <p id="blank2"></p>
+
+    <h1 id="heading">
+      TicTacToe
+    </h1>
+
+    <div class="playGrid">
+      <div id="item1" class="spaced" onclick="game(1)"></div>
+      <div id="item2" class="spaced" onclick="game(2)"></div>
+      <div id="item3" class="spaced" onclick="game(3)"></div>
+      <div id="item4" class="spaced" onclick="game(4)"></div>
+      <div id="item5" class="spaced" onclick="game(5)"></div>
+      <div id="item6" class="spaced" onclick="game(6)"></div>
+      <div id="item7" class="spaced" onclick="game(7)"></div>
+      <div id="item8" class="spaced" onclick="game(8)"></div>
+      <div id="item9" class="spaced" onclick="game(9)"></div>
+    </div>
+
+
+   <h3 id = displayTurn>Crosses</h3>
+  </div>
+  <!---------------------------------------------⨉-〇-->
+  <script src="./src/interface.js"></script>
+</body>

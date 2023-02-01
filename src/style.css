@@ -1,0 +1,101 @@
+body {
+  background-color: #9b9b9b;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+/*----------------------*/
+
+#gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  grid-template-areas:
+    " blank1 title turn "
+    " blank1 board blank2 "
+    " blank1 board blank2 ";
+}
+
+.playGrid {
+  display: grid;
+  grid-area: board;
+  text-align: center;
+  
+  
+  width: 35vw;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+  grid-template-areas:
+    " item1 item2 item3 "
+    " item4 item5 item6 "
+    " item7 item8 item9 ";
+    
+}
+
+/*----------------------*/
+.playGrid > div:hover {
+  background-color: #48d392;
+  opacity: 0.9;
+  transition: color 1s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+#displayTurn{
+  grid-area: turn;
+  font-size: 2.5vw;
+  padding-bottom: 2vw;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: 0.3s;
+  }
+
+
+
+
+.spaced{
+  background-color: #353535;
+  border-radius: 8%;
+  margin: 5px;
+  line-height: 11vw;
+  height: 11vw;
+  width: 11vw;
+  font-size: 8vw;
+  padding-right: 0.3vw;
+  opacity: 1;
+  transition: 0.3s;
+
+ 
+
+}
+
+
+
+
+
+
+p {
+  text-align: center;
+
+  width: 100%;
+  height: auto;
+  
+}
+
+h1 {
+  grid-area: title;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 3vw;
+  color: rgb(20, 20, 20);
+  
+}
+
+
+
+.hidden{
+
+
+}
